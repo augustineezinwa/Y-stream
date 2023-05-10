@@ -15,7 +15,8 @@ export default function Home() {
           <div className="mt-5 mx-9">
             <input
               type="text"
-              className="w-full bg-gray-dark py-4 px-3.5 placeholder:text-gray-8c placeholder:text-2xl placeholder:font-normal" placeholder="Email or password"
+              className="w-full bg-gray-dark py-4 px-3.5 placeholder:text-gray-8c placeholder:text-2xl placeholder:font-normal"
+              placeholder="Email or password"
             />
           </div>
         </form>
