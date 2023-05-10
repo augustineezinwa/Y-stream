@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className="mt-11 ml-20 text-6xl text-osblood">Y-Stream</h1>
       </div>
 
-      <div className="w-[444px] h-[531px] mx-auto bg-gray-translucent/60">
+      <div className="md:w-[444px] md:h-[531px] mt-5 mx-auto bg-gray-translucent/60">
         <form title="Sign in">
           <div className="h-[1/6] text-white text-4xl mt-4 ml-8">Sign In</div>
 
@@ -57,6 +57,25 @@ export default function Home() {
             </p>
           </div>
         </form>
+      </div>
+
+      <div className="w-full bg-gray-translucent/60 text-white mt-20">
+        <div className="flex flex-col w-[60%] mx-auto mt-10">
+          <p>
+            Questions? <a>Contact Us</a>
+          </p>
+        </div>
+
+        <div className="w-[60%] mx-auto text-gray-b3  my-5">
+          <ul className="grid md:grid-cols-4  gap-4 ">
+            <li>FAQ</li>
+            <li>Help Center</li>
+            <li>Terminal</li>
+            <li>Privacy</li>
+            <li>Cookie Preference</li>
+            <li>Corporate Information</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
