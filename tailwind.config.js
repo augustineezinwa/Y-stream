@@ -14,6 +14,7 @@ module.exports = {
         "gray-translucent": "#020203",
         "gray-dark": "#333333",
         "gray-8c": "#8C8C8C",
+        "gray-b3": "#B3B3B3",
       },
     },
   },
