@@ -18,9 +18,7 @@ module.exports = {
         "gray-413": "#413C3C",
         "gray-373": "#37383B",
         "gray-111": "#11131A",
-        "gray-init": "#49133F",
-        "gray-linear-grad":
-          "linear-gradient(141.32deg, #49133F 32.61%, #160F48 77.77%)",
+        "ocean-dark-blue": "#132144",
       },
     },
   },

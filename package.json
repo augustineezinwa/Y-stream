@@ -37,8 +37,8 @@
     "tailwindcss": "^3.3.2"
   },
   "lint-staged": {
-    "**/*.{js,jsx,tsx,ts,css}": [
- 
+    "**/*.{js,jsx,tsx,ts}": [
+       "eslint . --fix",
       "prettier --write ."
     ]
   }

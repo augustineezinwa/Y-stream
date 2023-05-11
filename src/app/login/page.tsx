@@ -36,10 +36,10 @@ export default function Login() {
               </button>
             </div>
 
-            <div className="flex flex-row md:mt-32 mt-10">
+            <div className="flex flex-row flex-wrap md:mt-32 mt-10 gap-12">
               <div
                 className={classnames(
-                  "px-4 py-4  h-[211px] w-[283px] text-white",
+                  "px-4 py-4  h-[230px] w-[283px] text-white",
                   styles.ad
                 )}
               >
@@ -50,11 +50,99 @@ export default function Login() {
                   Blu-ray players, and more.
                 </p>
               </div>
-              <div className=""></div>
-              <div className=""></div>
-              <div className=""></div>
-              <div className=""></div>
-              <div className=""></div>
+
+              <div
+                className={classnames(
+                  "px-4 py-4  h-[230px] w-[283px] text-white",
+                  styles.ad
+                )}
+              >
+                <Image
+                  src="/popcorn.svg"
+                  alt="cinema ad"
+                  width={60}
+                  height={60}
+                />
+                <p className="text-xl font-bold mt-1">Watch Everywhere</p>
+                <p className="mt-2">
+                  Stream unlimited movies and TV shows on your phone, tablet,
+                  laptop, and TV.
+                </p>
+              </div>
+
+              <div
+                className={classnames(
+                  "px-4 py-4  h-[230px] w-[283px] text-white",
+                  styles.ad
+                )}
+              >
+                <Image
+                  src="/crystallball.svg"
+                  alt="kids ad"
+                  width={60}
+                  height={60}
+                />
+                <p className="text-xl font-bold mt-1">
+                  Create Profiles for kids
+                </p>
+                <p className="mt-2">
+                  Send kids on adventures with their favorite characters in a
+                  space made just for them—free with your membership.
+                </p>
+              </div>
+
+              <div
+                className={classnames(
+                  "px-4 py-4  h-[230px] w-[283px] text-white",
+                  styles.ad
+                )}
+              >
+                <Image
+                  src="/download.svg"
+                  alt="download ad"
+                  width={60}
+                  height={60}
+                />
+                <p className="text-xl font-bold mt-1">
+                  Download your shows to watch online
+                </p>
+                <p className="mt-2">
+                  Save your favorites easily and always have something to watch.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-white mt-12">
+              <p className="font-bold text-3xl">Frequently Asked Questions</p>
+              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-9">
+                <div>What is Y-stream?</div>
+                <button className="">+</button>
+              </div>
+
+              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div>How much does Y-stream cost?</div>
+                <button className="">+</button>
+              </div>
+
+              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div>Where can I watch?</div>
+                <button className="">+</button>
+              </div>
+
+              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div>How do I cancel?</div>
+                <button className="">+</button>
+              </div>
+
+              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div>What can I watch on Y-stream?</div>
+                <button className="">+</button>
+              </div>
+
+              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div>Is Y-stream good for kids?</div>
+                <button className="">+</button>
+              </div>
             </div>
           </div>
         </div>
