@@ -15,6 +15,12 @@ module.exports = {
         "gray-dark": "#333333",
         "gray-8c": "#8C8C8C",
         "gray-b3": "#B3B3B3",
+        "gray-413": "#413C3C",
+        "gray-373": "#37383B",
+        "gray-111": "#11131A",
+        "gray-init": "#49133F",
+        "gray-linear-grad":
+          "linear-gradient(141.32deg, #49133F 32.61%, #160F48 77.77%)",
       },
     },
   },
