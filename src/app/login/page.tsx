@@ -112,37 +112,142 @@ export default function Login() {
               </div>
             </div>
 
-            <div className="text-white mt-12">
+            <div className="text-white mt-12 mr-1">
               <p className="font-bold text-3xl">Frequently Asked Questions</p>
-              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-9">
-                <div>What is Y-stream?</div>
-                <button className="">+</button>
+
+              <div className="font-medium md:text-2xl sm:text-xl sm:w-[80%] md:w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div className="flex justify-between flex-wrap">
+                  <div>What is Y-stream?</div>
+                  <label htmlFor="check-6" className="p-1">
+                    +
+                  </label>
+                  <input id="check-6" type="checkbox" className="peer hidden" />
+                  <p className="mt-1 max-h-[0] overflow-hidden peer-checked:max-h-[500px] duration-1000 ease-in-out font-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente iste consequuntur quae deserunt dolore perferendis
+                    corporis vitae culpa, exercitationem, hic odio tempore
+                    dignissimos aperiam, ratione ad! Quo dolor voluptatem quia!
+                  </p>
+                </div>
               </div>
 
-              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
-                <div>How much does Y-stream cost?</div>
-                <button className="">+</button>
+              <div className="font-medium md:text-2xl sm:text-xl sm:w-[80%] md:w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div className="flex justify-between flex-wrap">
+                  <div>How much does Y-stream cost?</div>
+                  <label htmlFor="check-7" className="p-1">
+                    +
+                  </label>
+                  <input id="check-7" type="checkbox" className="peer hidden" />
+                  <p className="mt-1 max-h-[0] overflow-hidden peer-checked:max-h-[500px] duration-1000 ease-in-out font-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente iste consequuntur quae deserunt dolore perferendis
+                    corporis vitae culpa, exercitationem, hic odio tempore
+                    dignissimos aperiam, ratione ad! Quo dolor voluptatem quia!
+                  </p>
+                </div>
               </div>
 
-              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
-                <div>Where can I watch?</div>
-                <button className="">+</button>
+              <div className="font-medium md:text-2xl sm:text-xl sm:w-[80%] md:w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div className="flex justify-between flex-wrap">
+                  <div>Where can I watch?</div>
+                  <label htmlFor="check-5" className="p-1">
+                    +
+                  </label>
+                  <input id="check-5" type="checkbox" className="peer hidden" />
+                  <p className="mt-1 max-h-[0] overflow-hidden peer-checked:max-h-[500px] duration-1000 ease-in-out font-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente iste consequuntur quae deserunt dolore perferendis
+                    corporis vitae culpa, exercitationem, hic odio tempore
+                    dignissimos aperiam, ratione ad! Quo dolor voluptatem quia!
+                  </p>
+                </div>
               </div>
 
-              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
-                <div>How do I cancel?</div>
-                <button className="">+</button>
+              <div className="font-medium md:text-2xl sm:text-xl sm:w-[80%] md:w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div className="flex justify-between flex-wrap">
+                  <div>How do I cancel?</div>
+                  <label htmlFor="check-0" className="p-1">
+                    +
+                  </label>
+                  <input id="check-0" type="checkbox" className="peer hidden" />
+                  <p className="mt-1 max-h-[0] overflow-hidden peer-checked:max-h-[500px] duration-1000 ease-in-out font-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente iste consequuntur quae deserunt dolore perferendis
+                    corporis vitae culpa, exercitationem, hic odio tempore
+                    dignissimos aperiam, ratione ad! Quo dolor voluptatem quia!
+                  </p>
+                </div>
               </div>
 
-              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
-                <div>What can I watch on Y-stream?</div>
-                <button className="">+</button>
+              <div className="font-medium md:text-2xl sm:text-xl sm:w-[80%] md:w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div className="flex justify-between flex-wrap">
+                  <div>Where can I watch on Y-stream?</div>
+                  <label htmlFor="check-10" className="p-1">
+                    +
+                  </label>
+                  <input
+                    id="check-10"
+                    type="checkbox"
+                    className="peer hidden"
+                  />
+                  <p className="mt-1 max-h-[0] overflow-hidden peer-checked:max-h-[500px] duration-1000 ease-in-out font-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente iste consequuntur quae deserunt dolore perferendis
+                    corporis vitae culpa, exercitationem, hic odio tempore
+                    dignissimos aperiam, ratione ad! Quo dolor voluptatem quia!
+                  </p>
+                </div>
               </div>
 
-              <div className="flex justify-between font-medium text-2xl w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
-                <div>Is Y-stream good for kids?</div>
-                <button className="">+</button>
+              <div className="font-medium md:text-2xl sm:text-xl sm:w-[80%] md:w-[55%] bg-ocean-dark-blue py-2 px-6 mt-2">
+                <div className="flex justify-between flex-wrap">
+                  <div>Is Y-stream good for kids?</div>
+                  <label htmlFor="check-4" className="p-1">
+                    +
+                  </label>
+                  <input id="check-4" type="checkbox" className="peer hidden" />
+                  <p className="mt-1 max-h-[0] overflow-hidden peer-checked:max-h-[500px] duration-1000 ease-out font-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente iste consequuntur quae deserunt dolore perferendis
+                    corporis vitae culpa, exercitationem, hic odio tempore
+                    dignissimos aperiam, ratione ad! Quo dolor voluptatem quia!
+                  </p>
+                </div>
               </div>
+            </div>
+
+            <p className="text-xl mt-6 font-medium">
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-1">
+              <input
+                type="email"
+                className="bg-gray-111/80 py-3.5 px-4 md:min-w-[381px] min-w-[80%] border border-gray-373 rounded shadow-2xl mr-1"
+                placeholder="Email address"
+              />
+              <button className="py-3.5 px-4 text-xl bg-osblood rounded">
+                Get Started {">"}
+              </button>
+            </div>
+          </div>
+
+          <div className="w-full bg-gray-translucent/60 text-white mt-20">
+            <div className="flex flex-col w-[60%] mx-auto mt-10">
+              <p>
+                Questions? <a>Contact Us</a>
+              </p>
+            </div>
+
+            <div className="w-[60%] mx-auto text-gray-b3  my-5">
+              <ul className="grid md:grid-cols-4  gap-4 ">
+                <li>FAQ</li>
+                <li>Help Center</li>
+                <li>Terminal</li>
+                <li>Privacy</li>
+                <li>Cookie Preference</li>
+                <li>Corporate Information</li>
+              </ul>
             </div>
           </div>
         </div>
