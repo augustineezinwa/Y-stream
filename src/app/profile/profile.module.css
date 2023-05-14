@@ -1,4 +1,8 @@
 .kid {
-    background: linear-gradient(234.89deg, #5E51AC 30.74%, rgba(149, 53, 193, 0) 94.7%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(
+    234.89deg,
+    #5e51ac 30.74%,
+    rgba(149, 53, 193, 0) 94.7%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
