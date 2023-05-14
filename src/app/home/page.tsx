@@ -5,8 +5,8 @@ import styles from "./home.module.css";
 export default function Home() {
   return (
     <>
-      <div className="bg-black">
-        <header className="bg-black md:flex md:flex-row fixed w-full md:justify-between text-white z-40">
+      <div className="bg-gray-111">
+        <header className="bg-gray-111 md:flex md:flex-row fixed w-full md:justify-between text-white z-40">
           <h1
             className={classnames(
               styles.headerTitleY,
@@ -79,7 +79,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-black min-h-screen">
+        <div className="bg-gray-111 min-h-screen">
           <div className="flex flex-col">
             <h3 className="text-white m-4 pt-5 text-2xl font-semibold">
               Released in the Past year

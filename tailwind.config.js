@@ -21,6 +21,7 @@ module.exports = {
         "ocean-dark-blue": "#132144",
         "gray-837": "#837F75",
         "ocean-blue": "#0872E5",
+        theme: "#938873",
       },
     },
   },
