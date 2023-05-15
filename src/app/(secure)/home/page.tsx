@@ -2,7 +2,7 @@ import Footer from "@/app/footer/footer";
 import classnames from "classnames";
 import Image from "next/image";
 import styles from "./home.module.css";
-import Nav from "./nav";
+import Nav from "./nav/nav";
 
 export default function Home() {
   return (
