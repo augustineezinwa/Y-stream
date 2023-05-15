@@ -1,6 +1,8 @@
-export default function Home() {
+import Footer from "@/app/footer/footer";
+
+export default function Login() {
   return (
-    <div className="flex flex-col bg-cover bg-center bg-sign-up-background min-h-screen">
+    <>
       <div>
         <h1 className="mt-11 ml-20 text-6xl text-osblood">Y-Stream</h1>
       </div>
@@ -55,25 +57,6 @@ export default function Home() {
           </div>
         </form>
       </div>
-
-      <div className="w-full bg-gray-translucent/60 text-white mt-20">
-        <div className="flex flex-col w-[60%] mx-auto mt-10">
-          <p>
-            Questions? <a>Contact Us</a>
-          </p>
-        </div>
-
-        <div className="w-[60%] mx-auto text-gray-b3  my-5">
-          <ul className="grid md:grid-cols-4  gap-4 ">
-            <li>FAQ</li>
-            <li>Help Center</li>
-            <li>Terminal</li>
-            <li>Privacy</li>
-            <li>Cookie Preference</li>
-            <li>Corporate Information</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
