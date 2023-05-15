@@ -1,0 +1,17 @@
+.headerTitle {
+    background: radial-gradient(
+      115.44% 109.56% at 50% 50%,
+      #ffebef 0%,
+      rgba(116, 103, 108, 0) 100%
+    ); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    background-clip: text;
+    color: transparent;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  
+  .headerTitleY {
+    composes: headerTitle;
+    font-size: 24px;
+  }

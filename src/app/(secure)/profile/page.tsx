@@ -9,13 +9,13 @@ export default function Profile() {
           <h1 className="text-white ">Who is watching?</h1>
         </div>
         <div className="flex md:flex-row flex-col place-items-center mt-5">
-          <div className="text-white text-4xl font-semibold bg-ocean-blue text-center py-[80px] px-[40px] h-[187px] w-[237px] mt-6">
+          <div className="text-white text-4xl font-semibold bg-ocean-blue text-center py-[80px] h-[187px] w-[237px] mt-6">
             Augustine
           </div>
           <div
             className={classnames(
               styles.kid,
-              "text-white text-4xl text-center py-[80px] px-[40px] h-[187px] w-[237px] md:ml-6 mt-6"
+              "text-white text-4xl text-center py-[80px] h-[187px] w-[237px] md:ml-6 mt-6"
             )}
           >
             Kids
