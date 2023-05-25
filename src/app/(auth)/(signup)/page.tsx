@@ -3,7 +3,7 @@ import classnames from "classnames";
 import Image from "next/image";
 import styles from "./signup.module.css";
 
-export default function Home() {
+export default function SignUp() {
   return (
     <>
       <div className="flex justify-between items-center md:mt-11 mt-2 mr-2 ml-5 md:ml-20 md:mr-20">
