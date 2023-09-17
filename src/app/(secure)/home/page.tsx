@@ -8,10 +8,12 @@ import { useUser } from "@auth0/nextjs-auth0/client";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const { user, error, isLoading } = useUser();
+  const { user, isLoading } = useUser();
   const router = useRouter();
 
-  if (!user) router.push("/login");
+  if (!user && !isLoading) {
+    return router.push("/login");
+  }
   return (
     <>
       <div className="bg-gray-111">

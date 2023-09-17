@@ -16,7 +16,7 @@ const LINKS = [
 ];
 
 export default function Nav() {
-  const { user, error, isLoading } = useUser();
+  const { user } = useUser();
   return (
     <header className="bg-gray-111 md:flex md:flex-row fixed w-full md:justify-between text-white z-40">
       <NavTitle />
