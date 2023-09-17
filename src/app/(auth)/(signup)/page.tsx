@@ -1,14 +1,20 @@
-import Footer from "@/app/footer/footer";
+"use client";
+
 import classnames from "classnames";
 import Image from "next/image";
 import styles from "./signup.module.css";
+import { useRouter } from "next/navigation";
 
 export default function SignUp() {
+  const router = useRouter();
   return (
     <>
       <div className="flex justify-between items-center md:mt-11 mt-2 mr-2 ml-5 md:ml-20 md:mr-20">
         <h1 className="md:text-6xl text-3xl text-osblood">Y-Stream</h1>
-        <button className="bg-osblood px-10 py-0 h-[45px] text-white text-sm">
+        <button
+          className="bg-osblood px-10 py-0 h-[45px] text-white text-sm"
+          onClick={() => router.push("/login")}
+        >
           Sign in
         </button>
       </div>
