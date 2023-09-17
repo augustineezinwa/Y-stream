@@ -1,8 +1,17 @@
 "use client";
+import { useUser } from "@auth0/nextjs-auth0/client";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
+  const { user, isLoading } = useUser();
+  const router = useRouter();
+
+  if (user && !isLoading) {
+    router.push("/home");
+  }
   return (
-    <form title="Sign in">
+    <form title="Sign in" className="mb-24">
       <div className="h-[1/6] text-white text-4xl mt-4 ml-8">Sign In</div>
 
       <div className="mt-5 mx-9">
@@ -36,12 +45,12 @@ export default function LoginForm() {
 
       <div className="flex mt-4 mx-9">
         <p className="text-gray-b3">New to Y-stream?</p>
-        <a
-          href="/signup"
+        <Link
+          href="/api/auth/login"
           className="ml-1 text-white text-base hover:text-gray-b3"
         >
-          Signup now
-        </a>
+          Login using Auth0
+        </Link>
       </div>
       <div className="flex mt-4 mx-9">
         <p className="text-gray-b3 text-xs">

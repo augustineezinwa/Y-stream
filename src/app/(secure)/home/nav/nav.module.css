@@ -15,3 +15,22 @@
   composes: headerTitle;
   font-size: 24px;
 }
+
+
+
+.dashOne, .dashTwo, .dashThree {
+  display: block;
+  width: 35px;
+  height: 40%;
+  border-top: 2px solid white;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+.dashOne {
+  transform-origin: 0% 0%;
+}
+
+.dashThree {
+  transform-origin: 0% 100%; 
+}

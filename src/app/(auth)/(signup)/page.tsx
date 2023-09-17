@@ -4,9 +4,14 @@ import classnames from "classnames";
 import Image from "next/image";
 import styles from "./signup.module.css";
 import { useRouter } from "next/navigation";
+import { useUser } from "@auth0/nextjs-auth0/client";
 
 export default function SignUp() {
   const router = useRouter();
+  const { user, error, isLoading } = useUser();
+
+  if (user && !isLoading) return router.push("/home");
+
   return (
     <>
       <div className="flex justify-between items-center md:mt-11 mt-2 mr-2 ml-5 md:ml-20 md:mr-20">

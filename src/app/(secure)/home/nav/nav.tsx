@@ -1,8 +1,10 @@
+"use client";
 import classnames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./nav.module.css";
 import NavTitle from "./nav-title";
+import { useUser } from "@auth0/nextjs-auth0/client";
 
 const LINKS = [
   { name: "Home", route: "/home" },
@@ -14,6 +16,7 @@ const LINKS = [
 ];
 
 export default function Nav() {
+  const { user, error, isLoading } = useUser();
   return (
     <header className="bg-gray-111 md:flex md:flex-row fixed w-full md:justify-between text-white z-40">
       <NavTitle />
@@ -51,8 +54,11 @@ export default function Nav() {
             className=""
           />
         </li>
-        <li className="p-2 bg-ocean-blue text-white w-[40px] h-[40px] text-center">
-          A
+        <li className="ml-2 p-2 bg-ocean-blue text-white w-[40px] h-[40px] text-center">
+          <Link href="/profile">{user?.name![0]}</Link>
+        </li>
+        <li className="p-2">
+          <Link href="/api/auth/logout">Logout</Link>
         </li>
       </ul>
     </header>

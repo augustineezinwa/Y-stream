@@ -1,9 +1,17 @@
+"use client";
+
 import Footer from "@/app/footer/footer";
 import Image from "next/image";
 import Nav from "./nav/nav";
 import MoviePreview from "./movie-preview/movie-preview";
+import { useUser } from "@auth0/nextjs-auth0/client";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const { user, error, isLoading } = useUser();
+  const router = useRouter();
+
+  if (!user) router.push("/login");
   return (
     <>
       <div className="bg-gray-111">
