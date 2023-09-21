@@ -14,7 +14,7 @@ const afterCallback = (
   state: { [key: string]: any } | undefined
 ) => {
   if (session) {
-    res.setHeader('Location', '/dashboard/auth');
+    res.setHeader('Location', '/');
   }
   return session;
 };
@@ -23,7 +23,7 @@ function getUrls(req: NextApiRequest) {
   const host = req.headers['host'];
   const protocol = process.env.VERCEL_URL ? 'https' : 'http';
   const redirectUri = `${protocol}://${host}/api/auth/callback`;
-  const returnTo = `${protocol}://${host}/dashboard/auth`;
+  const returnTo = `${protocol}://${host}`;
   const logoutUrl = `${protocol}://${host}`;
   return {
     redirectUri,
