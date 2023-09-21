@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import classnames from "classnames";
-import styles from "./profile.module.css";
-import { useUser } from "@auth0/nextjs-auth0/client";
+import classnames from 'classnames';
+import styles from './profile.module.css';
+import { useUser } from '@auth0/nextjs-auth0/client';
 
 export default async function Profile() {
   const { user, error, isLoading } = useUser();
@@ -19,12 +19,12 @@ export default async function Profile() {
         </div>
         <div className="flex md:flex-row flex-col place-items-center mt-5">
           <div className="text-white text-4xl font-semibold bg-ocean-blue text-center py-[80px] h-[187px] w-[237px] mt-6">
-            {user?.name?.split(" ")[0]}
+            {user?.name?.split(' ')[0]}
           </div>
           <div
             className={classnames(
               styles.kid,
-              "text-white text-4xl text-center py-[80px] h-[187px] w-[237px] md:ml-6 mt-6"
+              'text-white text-4xl text-center py-[80px] h-[187px] w-[237px] md:ml-6 mt-6'
             )}
           >
             Kids

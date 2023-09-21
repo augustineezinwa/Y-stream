@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import classnames from "classnames";
-import Image from "next/image";
-import styles from "./signup.module.css";
-import { useRouter } from "next/navigation";
-import { useUser } from "@auth0/nextjs-auth0/client";
+import classnames from 'classnames';
+import Image from 'next/image';
+import styles from './signup.module.css';
+import { useRouter } from 'next/navigation';
+import { useUser } from '@auth0/nextjs-auth0/client';
 
 export default function SignUp() {
   const router = useRouter();
   const { user, error, isLoading } = useUser();
 
-  if (user && !isLoading) return router.push("/home");
+  if (user && !isLoading) return router.push('/home');
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function SignUp() {
         <h1 className="md:text-6xl text-3xl text-osblood">Y-Stream</h1>
         <button
           className="bg-osblood px-10 py-0 h-[45px] text-white text-sm"
-          onClick={() => router.push("/login")}
+          onClick={() => router.push('/login')}
         >
           Sign in
         </button>
@@ -41,14 +41,14 @@ export default function SignUp() {
             placeholder="Email address"
           />
           <button className="py-3.5 px-4 text-xl bg-osblood rounded">
-            Get Started {">"}
+            Get Started {'>'}
           </button>
         </div>
 
         <div className="flex flex-row flex-wrap md:mt-32 mt-10 gap-12">
           <div
             className={classnames(
-              "px-4 py-4  h-[230px] w-[283px] text-white",
+              'px-4 py-4  h-[230px] w-[283px] text-white',
               styles.ad
             )}
           >
@@ -62,7 +62,7 @@ export default function SignUp() {
 
           <div
             className={classnames(
-              "px-4 py-4  h-[230px] w-[283px] text-white",
+              'px-4 py-4  h-[230px] w-[283px] text-white',
               styles.ad
             )}
           >
@@ -76,7 +76,7 @@ export default function SignUp() {
 
           <div
             className={classnames(
-              "px-4 py-4  h-[230px] w-[283px] text-white",
+              'px-4 py-4  h-[230px] w-[283px] text-white',
               styles.ad
             )}
           >
@@ -95,7 +95,7 @@ export default function SignUp() {
 
           <div
             className={classnames(
-              "px-4 py-4  h-[230px] w-[283px] text-white",
+              'px-4 py-4  h-[230px] w-[283px] text-white',
               styles.ad
             )}
           >
@@ -224,7 +224,7 @@ export default function SignUp() {
             placeholder="Email address"
           />
           <button className="py-3.5 px-4 text-xl bg-osblood rounded">
-            Get Started {">"}
+            Get Started {'>'}
           </button>
         </div>
       </div>

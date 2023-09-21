@@ -1,6 +1,6 @@
-import classnames from "classnames";
-import Image from "next/image";
-import styles from "./movie-preview.module.css";
+import classnames from 'classnames';
+import Image from 'next/image';
+import styles from './movie-preview.module.css';
 
 export default function MoviePreview() {
   return (
@@ -15,7 +15,7 @@ export default function MoviePreview() {
       <div
         className={classnames(
           styles.filmTitle,
-          "md:ml-20 p-4 absolute top-[40%] z-10"
+          'md:ml-20 p-4 absolute top-[40%] z-10'
         )}
       >
         <h2 className="text-6xl/[90%] font-extrabold">White Series</h2>
