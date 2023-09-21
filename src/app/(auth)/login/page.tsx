@@ -1,5 +1,5 @@
-import Footer from "@/app/footer/footer";
-import LoginForm from "./login-form";
+import Footer from '@/app/footer/footer';
+import LoginForm from './login-form';
 
 export default function Login() {
   return (

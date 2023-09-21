@@ -1,14 +1,14 @@
-"use client";
-import { useUser } from "@auth0/nextjs-auth0/client";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+'use client';
+import { useUser } from '@auth0/nextjs-auth0/client';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function LoginForm() {
   const { user, isLoading } = useUser();
   const router = useRouter();
 
   if (user && !isLoading) {
-    router.push("/home");
+    router.push('/home');
   }
   return (
     <form title="Sign in" className="mb-24">

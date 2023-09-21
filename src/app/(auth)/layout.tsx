@@ -1,4 +1,4 @@
-import Footer from "@/app/footer/footer";
+import Footer from '@/app/footer/footer';
 
 export default function AuthLayout({
   children,
