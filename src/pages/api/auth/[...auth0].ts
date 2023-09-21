@@ -1,4 +1,10 @@
-import { handleAuth, handleCallback, Session } from '@auth0/nextjs-auth0';
+import {
+  handleAuth,
+  handleCallback,
+  Session,
+  handleLogin,
+  handleLogout,
+} from '@auth0/nextjs-auth0';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 const afterCallback = (
@@ -17,8 +23,12 @@ function getUrls(req: NextApiRequest) {
   const host = req.headers['host'];
   const protocol = process.env.VERCEL_URL ? 'https' : 'http';
   const redirectUri = `${protocol}://${host}/api/auth/callback`;
+  const returnTo = `${protocol}://${host}/dashboard/auth`;
+  const logoutUrl = `${protocol}://${host}`;
   return {
     redirectUri,
+    returnTo,
+    logoutUrl,
   };
 }
 
@@ -33,5 +43,26 @@ export default handleAuth({
     } catch (error: any) {
       res.status(error.status || 500).end(error.message);
     }
+  },
+  async login(req: NextApiRequest, res: NextApiResponse) {
+    try {
+      const { redirectUri, returnTo } = getUrls(req);
+
+      await handleLogin(req, res, {
+        authorizationParams: {
+          redirect_uri: redirectUri,
+        },
+        returnTo: returnTo,
+      });
+    } catch (error: any) {
+      res.status(error.status || 400).end(error.message);
+    }
+  },
+
+  async logout(req: NextApiRequest, res: NextApiResponse) {
+    const { logoutUrl } = getUrls(req);
+    await handleLogout(req, res, {
+      returnTo: logoutUrl,
+    });
   },
 });

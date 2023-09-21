@@ -1,0 +1,16 @@
+{
+    "builds": [
+      {
+        "src": "src",
+        "use": "@vercel/node"
+      }
+    ],
+    "env": {
+      "VERCEL_URL": "@vercel/url"
+    },
+    "build": {
+      "env": {
+        "AUTH0_BASE_URL": "$https://{VERCEL_URL}"
+      }
+    }
+  }
