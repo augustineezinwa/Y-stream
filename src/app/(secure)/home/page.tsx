@@ -12,7 +12,7 @@ export default function Home() {
   const router = useRouter();
 
   if (!user && !isLoading) {
-    return router.push('/login');
+    return router.push('/');
   }
   return (
     <>
