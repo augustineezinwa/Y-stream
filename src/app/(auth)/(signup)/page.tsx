@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from './signup.module.css';
 import { useRouter } from 'next/navigation';
 import { useUser } from '@auth0/nextjs-auth0/client';
+import Link from 'next/link';
 
 export default function SignUp() {
   const router = useRouter();
@@ -16,12 +17,20 @@ export default function SignUp() {
     <>
       <div className="flex justify-between items-center md:mt-11 mt-2 mr-2 ml-5 md:ml-20 md:mr-20">
         <h1 className="md:text-6xl text-3xl text-osblood">Y-Stream</h1>
-        <button
-          className="bg-osblood px-10 py-0 h-[45px] text-white text-sm"
-          onClick={() => router.push('/login')}
-        >
-          Sign in
-        </button>
+        <div className="">
+          <Link
+            className="bg-osblood px-10 py-3 mr-5 text-white text-sm"
+            href="/api/auth/login"
+          >
+            Sign in
+          </Link>
+          <Link
+            className="bg-osblood px-10 py-3 text-white text-sm"
+            href="/api/auth/login"
+          >
+            Sign up
+          </Link>
+        </div>
       </div>
 
       <div className="text-white md:mr-20 md:ml-20 ml-5 mt-20">
