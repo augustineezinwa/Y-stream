@@ -17,3 +17,35 @@ jobs:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
           PRODUCTION: false
+          
+      - name: Save preview URL
+        id: save-preview-url
+        run: echo "BASE_URL=$(echo -n "${{ steps.vercel-deploy.outputs.PREVIEW_URL }}" | base64 -w0 | base64 -w0)" >> $GITHUB_OUTPUT
+  e2e-tests:
+    timeout-minutes: 200
+    runs-on: ubuntu-latest
+    needs: deploy # Ensure that the "test" job runs after the "deploy" job
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Decode preview URL
+        id: decode-preview-url
+        run: echo "PREVIEW_URL=$(echo -n "${{ needs.deploy.outputs.preview_url }}" | base64 -d -w0 | base64 -d -w0)" >> $GITHUB_ENV
+      - name: Run Playwright tests
+        env:
+          PREVIEW_URL: ${{ env.PREVIEW_URL }}
+          COLLECTOR_TEST_EMAIL: ${{ secrets.COLLECTOR_TEST_EMAIL }}
+          COLLECTOR_TEST_PASSWORD: ${{ secrets.COLLECTOR_TEST_PASSWORD }}
+        run: npx playwright test
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
